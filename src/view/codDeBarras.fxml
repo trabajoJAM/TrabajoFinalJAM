@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@Estilos.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GenerarBarrasController">
+   <children>
+      <Label layoutX="65.0" layoutY="75.0" text="Elige una pelicula" />
+      <ChoiceBox fx:id="choiceBox" layoutX="65.0" layoutY="113.0" prefHeight="25.0" prefWidth="193.0" />
+      <Button fx:id="okButton" layoutX="451.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#hechoBotonPulsado" text="Hecho" />
+      <ChoiceBox fx:id="choiceBoxCantidad" layoutX="353.0" layoutY="113.0" prefWidth="150.0" />
+      <Label layoutX="353.0" layoutY="75.0" text="Cantidad" />
+      <Label fx:id="finalLabel" layoutX="65.0" layoutY="273.0" prefHeight="21.0" prefWidth="504.0" text="Label" visible="false" />
+      <Button fx:id="codBarrasButton" layoutX="345.0" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#generarCodigoDeBarras" text="Generar codigo de barras" />
+   </children>
+</AnchorPane>

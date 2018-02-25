@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@Estilos.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ManualController">
+   <children>
+      <TextArea editable="false" prefHeight="324.0" prefWidth="749.0" styleClass="label" stylesheets="@Estilos.css" text="En esta aplicacion, es un control de Stock de películas. Entre sus funcionalidades podemos encontrar un lista &#10;completa de películas, donde con un boton de DETALLE, se nos abrirá una ventana nueva en la que  &#10;podemos encontrar: Titulo pelicula, una sinapsis, el precio, el stock, imagenes... También existe la posibilidad&#10;de sacar en un PDF todo el listado de películas y su correspodiente código de barras para llevar un control &#10;sobre las películas.Tambien podras realizar la operacion de Añadir una nueva película si lo deseas con su titulo&#10;,sinapsis,imagen,stock...&#10;&#10;Además cuenta con un gráfico para una previsualizacion más rápida y global de todos los productos.&#10;&#10;Es interesante añadir, que cuenta con un generador de código de barras,donde se podrá seleccionar la película&#10;y la cantidad del mismo título, agregandolo a un documento PDF listo para imprimir si lo deseas.&#10;&#10;La ubicacion de todas estas funcionalidades, se encuentran en el menu de arriba de la aplicación.&#10;" />
+      <Button layoutX="293.0" layoutY="337.0" mnemonicParsing="false" onAction="#crearPDFManual" text="Descargar en PDF" />
+   </children>
+</AnchorPane>

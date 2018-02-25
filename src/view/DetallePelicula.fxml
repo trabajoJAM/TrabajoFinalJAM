@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="listView" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@Estilos.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DetallePeliculaController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="216.0" fitWidth="159.0" layoutX="386.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="tituloLabel" layoutX="46.0" layoutY="23.0" text="TituloPelicula" />
+      <TextArea fx:id="descripTextArea" editable="false" layoutX="46.0" layoutY="64.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="300.0" wrapText="true" />
+      <Label layoutX="47.0" layoutY="275.0" text="Precio" />
+      <Label layoutX="47.0" layoutY="292.0" text="Stock" />
+      <Separator layoutX="369.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="1.0" />
+      <Label layoutX="47.0" layoutY="309.0" text="Fecha Alta" />
+      <Separator layoutX="3.0" layoutY="244.0" prefHeight="0.0" prefWidth="594.0" />
+      <Label fx:id="codigoBarrasLabel" layoutX="458.0" layoutY="309.0" text="Codigo de Barras" />
+      <Label fx:id="precioLabel" layoutX="202.0" layoutY="275.0" text="Label" />
+      <Label fx:id="stockLabel" layoutX="202.0" layoutY="292.0" text="Label" />
+      <Label fx:id="fechaDeAltaLabel" layoutX="202.0" layoutY="309.0" prefHeight="17.0" prefWidth="103.0" text="Label" />
+   </children>
+</AnchorPane>

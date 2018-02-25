@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="800.0" styleClass="background" stylesheets="@Estilos.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.VistaListaPeliculaController">
+   <children>
+      <TableView fx:id="tableView" layoutX="30.0" layoutY="76.0" onMouseClicked="#peliculaPulsada" prefHeight="349.0" prefWidth="741.0">
+          
+        <columns>
+          <TableColumn fx:id="tituloColumn" prefWidth="714.0" text="Titulo de Peliculas" />
+       
+        </columns>
+      </TableView>
+      <Button layoutX="400.0" layoutY="431.0" mnemonicParsing="false" onAction="#AñadirPelicula" text="Nuevo" />
+      <Button layoutX="520.0" layoutY="431.0" mnemonicParsing="false" onMouseClicked="#borrarPelicula" stylesheets="@Estilos.css" text="Borrar" />
+      <Button fx:id="detallesButton" disable="true" layoutX="641.0" layoutY="431.0" mnemonicParsing="false" onMouseClicked="#mostrarDetallePelicula" stylesheets="@Estilos.css" text="Detalles" />
+      <Button layoutX="292.0" layoutY="431.0" mnemonicParsing="false" onAction="#crearPDF" text="PDF" />
+   </children>
+</AnchorPane>
